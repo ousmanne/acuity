@@ -1,0 +1,46 @@
+/**---------------------------------------------------------------------------
+ * Acuity Imports and App Setup Stylesheet
+ *
+ * Includes the Acuity styles independently for ease of administration.
+ *
+ * Markup:        acuity.css
+ * Project:       Acuity
+ * Version:       0.1.0 05/28/2015
+ * Description:   A sharp, crisp front-end boilerplate, by Darkstar.
+ * Website:       http://github.com/iods/acuity
+ *
+ * Author:        Rye Miller
+ * Style Guide:   v0.1 (see doc/STYLE.md)
+ * Code Guide:    v0.1 (see doc/CODE.md)
+ ---------------------------------------------------------------------------*/
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * ACUITY
+ * Base.................The core styles of Acuity including resets.
+ * Grid.................The Acuity grid layout including multiple widths.
+ * UI...................User Interface styles including colors, inputs, etc.
+ *
+ * TESTS
+ */
+
+/*-----------------------------------------
+ * ACUITY - @Base
+ *---------------------------------------*/
+
+@import 'reset/reset.css';
+@import 'base/base.css';
+@import 'base/typography.css';
+
+/*-----------------------------------------
+ * ACUITY - @Grid
+ *---------------------------------------*/
+
+@import 'layout/960.css';
+
+/*-----------------------------------------
+ * ACUITY - @UI
+ *---------------------------------------*/
+
+@import 'ui/colors.css';

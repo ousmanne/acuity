@@ -1,2 +1,5 @@
 # Project Files
 .idea/
+
+# Test Files
+tests/

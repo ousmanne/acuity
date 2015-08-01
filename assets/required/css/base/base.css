@@ -1,0 +1,64 @@
+/**---------------------------------------------------------------------------
+ * Acuity Base Stylesheet
+ *
+ * Default properties to set the global styles for Acuity.
+ *
+ * Markup:        base.css
+ * Project:       Acuity
+ * Version:       0.1.0 05/28/2015
+ * Description:   A sharp, crisp front-end boilerplate, by Darkstar.
+ * Website:       http://github.com/iods/acuity
+ *
+ * Author:        Rye Miller
+ * Style Guide:   v0.1 (see doc/STYLE.md)
+ * Code Guide:    v0.1 (see doc/CODE.md)
+ ---------------------------------------------------------------------------*/
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and style configs.
+ *
+ * TESTS
+ */
+
+/**----------------------------------------
+ * SETTINGS - @Global
+ * --------------------------------------*/
+
+/**
+ * Sets the font size to a global default allowing more control over
+ * how the designer initially intended the experience. Now that browsers
+ * are more geared towards enlarging the page vs. the text the ability
+ * to manage 'responsive' text is done through media queries. This does
+ * however introduce the issue of DRY as you may be duplicating values
+ * through queries when using px.
+ *
+ * Google has also referenced the affect this has on page speed and
+ * complexity of maintaining your stylesheets and a consistent design.
+ */
+html {
+    font-size: 16px; /* 100% ? */
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #212121;
+}
+
+body {
+    background: transparent;
+    overflow-x: hidden;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/**----------------------------------------
+ * TESTS
+ * --------------------------------------*/
