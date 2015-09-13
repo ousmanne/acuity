@@ -1,5 +1,8 @@
 # Project Files
 .idea/
 
+# Docs (Until Complete)
+doc/
+
 # Test Files
 tests/
