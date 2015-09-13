@@ -1,0 +1,536 @@
+/**---------------------------------------------------------------------------
+ * Acuity UI Stylesheet
+ *
+ * Interface patterns for Acuity including colors, typography, and layout.
+ *
+ * Markup:        colors.css
+ * Project:       Acuity
+ * Version:       0.1.0 05/28/2015
+ * Description:   A sharp, crisp front-end boilerplate, by Darkstar.
+ * Website:       http://github.com/iods/acuity
+ *
+ * Author:        Rye Miller
+ * Style Guide:   v0.1 (see doc/STYLE.md)
+ * Code Guide:    v0.1 (see doc/CODE.md)
+ ---------------------------------------------------------------------------*/
+/**
+ * The following pattern is used by default for the Acuity package:
+ *
+ * Blue (Default):    #6C96D4
+ * Purple (Default):  #8173D8
+ * Yellow (Default):  #FFD508
+ * Orange (Default):  #FFCC75
+ * Dark Gray:         #212121
+ * Medium Gray:       #616161
+ */
+/**
+ * TABLE OF CONTENTS
+ *
+ * DEFAULTS
+ * Blacks...............
+ * Grays................
+ *
+ * THEME
+ * Layouts..............
+ * User.................
+ * Media................
+ * Performance..........
+ * Actions..............
+ * Post.................
+ * Navigation...........
+ * States...............
+ * Backgrounds..........
+ * Borders..............
+ * Indications..........
+ *
+ * BRAND (Darkstar)
+ * Color................
+ *
+ * HELPERS
+ * Type.................
+ * Muted................
+ * Warning..............
+ * Error................
+ * Info.................
+ * Success..............
+ * Link.................
+ *
+ * TESTS
+ */
+
+/**----------------------------------------
+ * DEFAULTS - @Blacks
+ * --------------------------------------*/
+
+.black {
+    color: #1B1A1C;
+}
+
+.bg-black {
+    background: #1B1A1C;
+}
+
+/**----------------------------------------
+ * DEFAULTS - @Grays
+ * --------------------------------------*/
+
+.gray-light {
+    color: #F5F5F5;
+}
+
+.bg-gray-light {
+    background: #F5F5F5;
+}
+
+.gray-dark {
+    color: #E0E0E0;
+}
+
+.bg-gray-dark {
+    background: #E0E0E0;
+}
+
+.keyline {
+    color: #D9D9D9;
+}
+
+.bg-keyline {
+    background: #D9D9D9;
+}
+
+.bdr-keyline {
+    border: 1px solid #D9D9D9;
+}
+
+.gray-supporting {
+    color: #616161;
+}
+
+.gray-muted {
+    color: #A4A3A3;
+}
+
+/**----------------------------------------
+ * DEFAULTS - @Whites
+ * --------------------------------------*/
+
+.white {
+    color: #FFF;
+}
+
+.bg-white {
+    background: #FFF;
+}
+
+/**----------------------------------------
+ * THEME - @Blue
+ * --------------------------------------*/
+
+.bg-blue-primary {
+    background: #025377;
+}
+
+.blue-lightest {
+    color: #BBDEFB;
+}
+
+.blue-light {
+    color: #64B5F6;
+}
+
+.blue {
+    color: #2196F3;
+}
+
+.bg-blue {
+    background: #2196F3;
+}
+
+.blue-dark {
+    color: #1976D2;
+}
+
+.blue-darkest {
+    color: #0D47A1;
+}
+
+.blue-accent {
+    color: #448AFF;
+}
+
+.bg-blue-lightest {
+    background: #BBDEFB;
+}
+
+.bg-blue-light {
+    background: #64B5F6;
+}
+
+.bg-blue-dark {
+    background: #1976D2;
+}
+
+.bg-blue-darkest {
+    background: #0D47A1;
+}
+
+.bg-blue-accent {
+    background: #448AFF;
+}
+
+/**----------------------------------------
+ * THEME - @Red
+ * --------------------------------------*/
+
+.red-lightest {
+    color: #FFCDD2;
+}
+
+.red-light {
+    color: #E57373;
+}
+
+.red {
+    color: #F44336;
+}
+
+.red-dark {
+    color: #D32F2F;
+}
+
+.red-darkest {
+    color: #B71C1C;
+}
+
+.bg-red-lightest {
+    background: #FFCDD2;
+}
+
+.bg-red-light {
+    background: #E57373;
+}
+
+.bg-red {
+    background: #F44336;
+}
+
+.bg-red-dark {
+    background: #D32F2F;
+}
+
+.bg-red-darkest {
+    background: #B71C1C;
+}
+
+/**----------------------------------------
+ * THEME - @Green
+ * --------------------------------------*/
+
+.green-lightest {
+    color: #C8E6C9;
+}
+
+.green-light {
+    color: #81C784;
+}
+
+.green {
+    color: #4CAF50;
+}
+
+.green-dark {
+    color: #388E3C;
+}
+
+.green-darkest {
+    color: #1B5E20;
+}
+
+.bg-green-lightest {
+    background: #C8E6C9;
+}
+
+.bg-green-light {
+        background: #81C784;
+}
+
+.bg-green {
+    background: #4CAF50;
+}
+
+.bg-green-dark {
+    background: #388E3C;
+}
+
+.bg-green-darkest {
+    background: #1B5E20;
+}
+
+/**----------------------------------------
+ * THEME - @Yellow
+ * --------------------------------------*/
+
+.yellow-lightest {
+    color: #FFF9C4;
+}
+
+.yellow-light {
+    color: #FFF176;
+}
+
+.yellow {
+    color: #FFEB3B;
+}
+
+.yellow-dark {
+    color: #FBC02D;
+}
+
+.yellow-darkest {
+    color: #F57F17;
+}
+
+.bg-yellow-lightest {
+    background: #FFF9C4;
+}
+
+.bg-yellow-light {
+    background: #FFF176;
+}
+
+.bg-yellow {
+    background: #FFEB3B;
+}
+
+.bg-yellow-dark {
+    background: #FBC02D;
+}
+
+.bg-yellow-darkest {
+    background: #F57F17;
+}
+
+/**----------------------------------------
+ * THEME - @Orange
+ * --------------------------------------*/
+
+.orange-lightest {
+    color: #FFE0B2;
+}
+
+.orange-light {
+    color: #FFB74D;
+}
+
+.orange {
+    color: #FF9800;
+}
+
+.orange-dark {
+    color: #F57C00;
+}
+
+.orange-darkest {
+    color: #E65100;
+}
+
+.bg-orange-lightest {
+    background: #FFE0B2;
+}
+
+.bg-orange-light {
+    background: #FFB74D;
+}
+
+.bg-orange {
+    background: #FF9800;
+}
+
+.bg-orange-dark {
+    background: #F57C00;
+}
+
+.bg-orange-darkest {
+    background: #E65100;
+}
+
+/**----------------------------------------
+ * THEME - @Orange
+ * --------------------------------------*/
+
+.deep-orange-lightest {
+    color: #FFCCBC;
+}
+
+.deep-orange-light {
+    color: #FF8A65;
+}
+
+.deep-orange {
+    color: #FF5722;
+}
+
+.deep-orange-dark {
+    color: #E64A19;
+}
+
+.deep-orange-darkest {
+    color: #BF360C;
+}
+
+.bg-deep-orange-lightest {
+    background: #FFCCBC;
+}
+
+.bg-deep-orange-light {
+    background: #FF8A65;
+}
+
+.bg-deep-orange {
+    background: #FF5722;
+}
+
+.bg-deep-orange-dark {
+    background: #E64A19;
+}
+
+.bg-deep-orange-darkest {
+    background: #BF360C;
+}
+
+/**----------------------------------------
+ * THEME - @Purple
+ * --------------------------------------*/
+
+.purple-lightest {
+    color: #E1BEE7;
+}
+
+.purple-light {
+    color: #BA68C8;
+}
+
+.purple {
+    color: #9C27B0;
+}
+
+.purple-dark {
+    color: #7B1FA2;
+}
+
+.purple-darkest {
+    color: #4A148C;
+}
+
+.bg-purple-lightest {
+    background: #E1BEE7;
+}
+
+.bg-purple-light {
+    background: #BA68C8;
+}
+
+.bg-purple {
+    background: #9C27B0;
+}
+
+.bg-purple-dark {
+    background: #7B1FA2;
+}
+
+.bg-purple-darkest {
+    background: #4A148C;
+}
+
+
+/**
+ * Palette: Mother's Day (Medium)
+ *
+ * Blue:      #a5cbd8
+ * Blue Grey: #aeb4af
+ * Rose:      #f97e66
+ * Grey:      #a1a49d
+ * Orange:    #f96234
+ * Wood:      #d03d00
+ * Maroon:    #88180b
+ */
+.bg-channel-blue {
+    background: #356288;
+}
+
+.bg-channel-blue-gray {
+    background: #aeb4af;
+}
+
+.bg-channel-rose {
+    background: #f97e66;
+}
+
+.bg-channel-gray {
+    background: #a1a49d;
+}
+
+.bg-channel-orange {
+    background: #f96234;
+}
+
+.bg-channel-wood {
+    background: #d03d00;
+}
+
+.bg-channel-maroon {
+    background: #88180b;
+}
+
+.bg-shop-womens {
+    background: #F66DEA;
+}
+
+.bg-shop-mens {
+    background: #0D8D5C;
+    /* background: #FF8047;*/
+}
+
+.bg-shop-yoga {
+    background: #FB4675;
+}
+
+.bg-shop-climbing {
+    background: #C56428;
+}
+
+.bg-shop-accessories {
+    background: #42BAD6;
+}
+
+.bg-fall-blue-dark {
+    background: #204253;
+}
+
+.bg-fall-rose {
+    background: #cd8aa8;
+}
+
+.bg-fall-maroon {
+    background: #ab5e5f;
+}
+
+.bg-fall-yellow {
+    background: #d8ae68;
+}
+
+.bg-fall-orange {
+    background: #f8a178;
+}
+
+.bg-fall-purple {
+    background: #8a73b4;
+}
+
+.bg-fall-blue-light {
+    background: #008ea7;
+}
+
+.bg-fall-green {
+    background: #8b9068;
+}
