@@ -1,0 +1,5 @@
+# www.robotstxt.org/
+
+# Crawls All
+User-agent: *
+Disallow:

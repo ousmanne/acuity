@@ -1,0 +1,13 @@
+# humanstxt.org/
+
+# Developers
+
+Rye Miller - @ryemiller
+
+# Thanks
+
+To everyone.
+
+# Technology
+
+HTML, CSS, XML

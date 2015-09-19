@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<browserconfig>
+    <msapplication>
+        <!--
+            Set the Windows 8 Tile Properties
+        -->
+        <tile>
+            <square70x70logo src="assets/required/img/smalltile.png"/>
+            <square150x150logo src="assets/required/img/mediumtile.png"/>
+            <wide310x150logo src="assets/required/img/widetile.png"/>
+            <square310x310logo src="assets/required/img/largetile.png"/>
+            <TileColor>#009900</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>
