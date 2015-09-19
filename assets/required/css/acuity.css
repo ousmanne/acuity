@@ -29,21 +29,21 @@
  * ACUITY - @Base
  *---------------------------------------*/
 
-@import 'reset/reset.css';
-@import 'base/base.css';
-@import 'base/typography.css';
+@import 'content/reset.css';
+@import 'content/base.css';
+@import 'content/typography.css';
 
 /*-----------------------------------------
  * ACUITY - @Grid
  *---------------------------------------*/
 
-@import 'layout/960.css';
+@import 'component/960.css';
 
 /*-----------------------------------------
  * ACUITY - @UI
  *---------------------------------------*/
 
-@import 'ui/colors.css';
+@import 'content/colors.css';
 
 /**
  * By creating a few classes to build out the length in full of each
