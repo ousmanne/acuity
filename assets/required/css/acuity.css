@@ -29,7 +29,7 @@
  * ACUITY - @Base
  *---------------------------------------*/
 
-@import 'content/reset.css';
+@import 'content/normalize.css';
 @import 'content/base.css';
 @import 'content/typography.css';
 
@@ -37,7 +37,7 @@
  * ACUITY - @Grid
  *---------------------------------------*/
 
-@import 'component/960.css';
+@import 'component/responsive/grid.css';
 
 /*-----------------------------------------
  * ACUITY - @UI
@@ -99,9 +99,7 @@
 }
 
 .grid-display {
-    margin-bottom: 20px;
-    height: 50px;
-    background: #81C784;
+    background: #F5F5F5;
 }
 
 code {

@@ -26,6 +26,43 @@
 /**----------------------------------------
  * SETTINGS - @Global
  * --------------------------------------*/
+html, body {
+    height: 100%; }
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+/*html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}*/
+
+@-moz-viewport {
+    width: device-width;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@-webkit-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
 
 /**
  * Sets the font size to a global default allowing more control over
@@ -40,6 +77,7 @@
  */
 html {
     font-size: 16px; /* 100% ? */
+    -webkit-tap-highlight-color: transparent;
 }
 
 html,
