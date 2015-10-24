@@ -1,2 +1,16 @@
 # Project Files
 .idea/
+
+# IE & Windows Utilities
+browserconfig.xml
+crossdomain.xml
+
+# Docs (Until Complete)
+doc/
+
+# Use when needed
+rss.xml
+sitemap.xml
+
+# Test Files
+tests/

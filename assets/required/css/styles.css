@@ -1,0 +1,75 @@
+/**---------------------------------------------------------------------------
+ * Vayu Stylesheet
+ *
+ * The base styles.css for prAna Vayu.
+ *
+ * Markup:        styles.css
+ * Project:       Vayu
+ * Version:       0.1.0 08/12/2015
+ * Description:   Components and elements of the prAna brand online.
+ * Website:       https://bitbucket.org/ryem/pranavayu
+ *
+ * Author:        Rye Miller
+ ---------------------------------------------------------------------------*/
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * VAYU
+ * Base.................The core/globally available variables and style properties.
+ * Typography...........Default type properties for the base style of Vayu.
+ *
+ * TESTS................Declarations loaded independently for test-case.
+ */
+
+/*-----------------------------------------
+ * VAYU - @Base
+ *---------------------------------------*/
+
+html {
+    font-size: 16px;
+}
+
+/**
+ * Black is more difficult to read, especially over a long period of
+ * time. This resets the default text color to a dark grey to compensate.
+ */
+html,
+button,
+input,
+select,
+textarea {
+    color: #212121;
+}
+
+body {
+    background: transparent;
+    font-family: 'Crimson Text', serif;
+    line-height: 1.563;
+    overflow-x: hidden;
+}
+
+/**
+ * This update will remove the gap between the image and the bottom
+ * of the container they are placed within, overriding 'baseline'.
+ */
+img {
+    vertical-align: middle;
+}
+
+/**----------------------------------------
+ * VAYU - @Typography
+ * --------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/**----------------------------------------
+ * TESTS
+ * --------------------------------------*/
