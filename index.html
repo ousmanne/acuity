@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<!--
-CONDITIONALS
--->
 <!--[if IE 6]>    <html class="ie6 no-js"                   lang="en-US" prefix=""><![endif]-->
 <!--[if lt IE 7]> <html class="ie ie6 lte9 lte8 lte7 no-js" lang="en-US" prefix=""><![endif]-->
 <!--[if IE 7]>    <html class="ie ie7 lte9 lte8 lte7 no-js" lang="en-US" prefix=""> <![endif]-->
@@ -9,189 +6,107 @@ CONDITIONALS
 <!--[if IE 9]>    <html class="ie ie9 lte9 no-js"           lang="en-US" prefix=""><![endif]-->
 <!--[if gt IE 9]> <html class="gtie9 ie9 no-js"             lang="en-US" prefix=""><![endif]-->
 <!--[if !IE]>     <html class="not-ie no-js"                lang="en-US" prefix=""><![endif]-->
+<head itemscope itemtype="http://schema.org/WebSite">
+    <meta charset="utf-8">
+    <meta http-equiv="cleartype" content="on">
 
-<head itemscope itemtype="http://schema.org/WebSite">                               <!-- microdata should be used on homepage only -->
-<!--
-    BROWSER & DEVICE
--->
-    <meta charset="utf-8">                                                          <!-- set character encoding to utf-8 -->
-
-    <meta http-equiv="X-UA-Compatible" content="IE=7">                              <!-- Render Internet Explorer v7 standards mode regardless of doctype -->
-    <meta http-equiv="X-UA-Compatible" content="IE=8">                              <!-- Render Internet Explorer v8 standards mode regardless of doctype -->
-    <meta http-equiv="X-UA-Compatible" content="IE=emulateie7">                     <!-- Render according to doctype, standards is v7 and quirks is v5 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=emulateie8">                     <!-- Render according to doctype, standards is v8 and quirks is v5 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">                           <!-- Render using latest version of Internet Explorer -->
-    <meta http-equiv="X-UA-Compatible" content="IE=5">                              <!-- Render using Internet Explorer v7 quirks mode, which is like v5 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=5; IE=8">                        <!-- Render using v8 if available, otherwise use v5 instead of v6 or v7 -->
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">                          <!-- Render using Chrome if available -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge; chrome=1">                 <!-- Render Chrome if available or using latest version of Internet Explorer -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">            <!-- zoom or no zoom -->
-    <!-- OR -->
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi">                               <!-- render at a devices native resolution -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge; chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi">
 
     <meta name="MobileOptimized"    content="width">
     <meta name="HandheldFriendly"   content="true">
 
-    <meta name="theme-color"                           content="#6C96D4" />         <!-- toolbar color in Android -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">             <!-- status bar style ["default", "black", "black-translucent"] -->
-    <meta name="msapplication-navbutton-color"         content="#6C96D4">           <!-- custom color of the Back and Forward buttons in Pinned browser window. -->
+    <meta name="theme-color"                           content="#6C96D4" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-navbutton-color"         content="#6C96D4">
 
-    <meta name="apple-mobile-web-app-capable"          content="yes">               <!-- hide Safari UI Components ["yes", "no"], use if running full screen in mobile safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="status bar appearance">                             <!-- sets the status bar style, works only if full-screen mode (apple-mobile-web-app-capable) is specified -->
-    <meta name="mobile-web-app-capable"                content="yes">               <!-- launch the page fullscreen when added to home using Chrome on Android -->
+    <meta name="apple-mobile-web-app-capable"          content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="status bar appearance">
+    <meta name="mobile-web-app-capable"                content="yes">
 
-    <meta http-equiv="cleartype" content="on">                                      <!-- mobile IE will activate ClearType technology for font smoothing -->
-<!--
-    AUTHORING
--->
-    <title itemprop="name">Page Title</title>                                       <!-- itemprop should be used on homepage only -->
-    <meta name="application-name"   content="" />                                   <!-- custom title used in IE/Safari label -->
-    <meta name="author"             content="humans.txt" />                         <!-- author/creator deserving credit of the site (not web_author) -->
-    <meta name="web_author"         content="name">                                 <!-- author/creator deserving credit of the site (not author) -->
-    <meta name="designer"           content="name">                                 <!-- designer deserving credit of the site look and feel -->
-    <meta name="publisher"          content="humans.txt" />                         <!-- tool used to publish the pages (not recommended so moved to humans.txt) -->
-    <meta name="copyright"          content="company/name">                         <!-- show images and content is protected (use this on every page) -->
-    <meta name="host"               content="domain.com" />                         <!-- rarely used but can be included (add to humans.txt regardless) -->
-    <meta name="host-admin"         content="humans.txt" />                         <!-- rarely used but can be included (add to humans.txt regardless) -->
-<!--
-    SEO
--->
-    <meta name="description"    content="">                                         <!-- description should not exceed 155 characters -->
-    <meta name="keywords"       content="site, keywords">                           <!-- no more than twenty and if possible, minimize the amount of pages displaying different keywords -->
-    <meta name="revisit-after"  content="10 days">                                  <!-- tells search engines when to reindex content -->
-    <meta name="expires"        content="tue, 01 Jun 2010 19:45:00 GMT">            <!-- declares to search engines when the content on your website will expire -->
+    <title itemprop="name">Page Title</title>
 
-    <meta name="google"                     content="nositelinkssearchbox" />       <!-- use if you don't want Google to show a search-box in the results -->
-    <meta name="google"                     content="notranslate" />                <!-- use it to tell Google not to translate the page -->
-    <meta name="google-site-verification"   content="[Webmaster Tag]" />            <!-- add verification for site reporting -->
+    <meta name="application-name"   content="" />
+    <meta name="author"             content="humans.txt" />
+    <meta name="designer"           content="name">
+    <meta name="copyright"          content="company/name">
+    <meta name="description"        content="">
+    <meta name="keywords"           content="site, keywords">
 
-    <link rel="canonical" href="http://domain.com" />                               <!-- canonical url of the website, should only be used on homepage -->
+    <link rel="canonical" href="http://domain.com" />
     <link rel="shortlink" href="http://domain.com" />
 
-    <meta name="msnbot" content="NOODP">                                            <!-- used for description in Bing results instead of DMOZ. -->
+    <meta name="msnbot" content="NOODP">
 
-    <meta property="og:image"            content="http://example.com/image.jpg">    <!-- Web page thumbnail -->
-    <meta property="og:image"            content="http://example.com/image2.jpg">   <!-- Web page thumbnail (can be multiple) -->
-    <meta property="og:site_name"        content="Site Name">                       <!-- Web site title -->
-    <meta property="og:title"            content="Page Title">                      <!-- Web page title -->
-    <meta property="og:description"      content="Description of this web page">    <!-- Web page description -->
-    <meta property="og:type"             content="article">                         <!-- Content type ["product", "blog", "website", "book", "movie", ... ] -->
-    <meta property="og:url"              content="http://example.com/index.html">   <!-- Url to this web page -->
-    <meta property="og:locale"           content="en_GB">                           <!-- Main Language -->
-    <meta property="og:locale:alternate" content="fr_FR">                           <!-- Alternate Language -->
-    <meta property="og:locale:alternate" content="es_ES">                           <!-- Alternate Language -->
-    <meta property="og:latitude"         content="50.97590">                        <!-- Geographical coordenate -->
-    <meta property="og:longitude"        content="0.017221">                        <!-- Geographical coordenate -->
-    <meta property="og:street-address"   content="Flat 1, 26 Street Name">          <!-- Postal Address -->
-    <meta property="og:locality"         content="London">                          <!-- Locality -->
-    <meta property="og:region"           content="London">                          <!-- Region -->
-    <meta property="og:postal-code"      content="N1 PLE">                          <!-- Post code -->
-    <meta property="og:country-name"     content="UK">                              <!-- Country -->
-    <meta property="og:email"            content="email@example.com">               <!-- Contact email -->
-    <meta property="og:phone_number"     content="+44 123 456 7622">                <!-- Contact phone number -->
-    <meta property="og:video"            content="http://example.com/video.flv">    <!-- Video file url-->
-    <meta property="og:video:height"     content="640">                             <!-- Video height -->
-    <meta property="og:video:width"      content="385">                             <!-- Video width -->
-    <meta property="og:video:type"       content="application/x-shockwave-flash">   <!-- Video file format type -->
-    <meta property="og:audio"            content="http://example.com/audio.mp3">    <!-- Audio file url -->
-    <meta property="og:audio:title"      content="Song Title">                      <!-- Audio title -->
-    <meta property="og:audio:artist"     content="Name of Band">                    <!-- Audio artist -->
-    <meta property="og:audio:album"      content="Album Title">                     <!-- Audio album title-->
-    <meta property="og:audio:type"       content="application/mp3">                 <!-- Audio file format type -->
-    <meta property="og:upc"              content="885909367481">                    <!-- UPC EAN barcodes-->
-    <meta property="og:isbn"             content="1873520786">                      <!-- Book ISBN number-->
-<!--
-    SOCIAL MEDIA
--->
-    <meta name="twitter:card"           content="summary_large_image">              <!-- tells Twitter the card type -->
-    <meta name="twitter:site"           content="@username">                        <!-- the Twitter account for the website or platform on which the content was published -->
-    <meta name="twitter:title"          content="">                                 <!-- tells Twitter the title of the webpage -->
-    <meta name="twitter:description"    content="">                                 <!-- tells Twitter the description of the webpage -->
-    <meta name="twitter:creator"        content="@username">                        <!-- tells Twitter the person who created the content of the webpage -->
-    <meta name="twitter:image:src"      content="http://domain.com/avatar.png">     <!-- tells Twitter the image of the webpage. Min size of 280px wide*150px tall. Max 1MB -->
+    <meta property="og:image"           content="http://example.com/image.jpg">
+    <meta property="og:site_name"       content="Site Name">
+    <meta property="og:title"           content="Page Title">
+    <meta property="og:description"     content="Description of this web page">
+    <meta property="og:type"            content="website">
+    <meta property="og:url"             content="http://example.com/index.html">
+    <meta property="og:email"           content="email@example.com">
+    <meta property="og:phone_number"    content="+44 123 456 7622">
 
-    <meta name="pinterest"          content="nopin">                                <!-- prevents sharing of content by pinterest users -->
-    <meta name="p:domain_verify"    content="[Pinterest Verification Code]"/>       <!-- pinterest app verification code -->
+    <meta name="twitter:card"           content="summary_large_image">
+    <meta name="twitter:site"           content="@username">
+    <meta name="twitter:title"          content="">
+    <meta name="twitter:description"    content="">
+    <meta name="twitter:creator"        content="@username">
+    <meta name="twitter:image:src"      content="http://domain.com/avatar.png">
 
-    <meta property="fb:app_id" content="XXXXXXXXXXXXXXX">                           <!-- facebook app id -->
+    <meta name="pinterest"              content="nopin">
 
-    <link rel="author"      href="https://plus.google.com/[profile-url]" />         <!-- associate the content with a Google+ profile -->
-    <link rel="publisher"   href="https://plus.google.com/{+PageId}" />             <!-- associate the content with a Google+ business page -->
-    <meta itemprop="name"           content="">                                     <!-- schema.org name/title for Google+ -->
-    <meta itemprop="description"    content="">                                     <!-- schema.org description for Google+ -->
-    <meta itemprop="image"          content="http://domain.com/avatar.png">         <!-- schema.org image for Google+ -->
-<!--
-    FEEDS
--->
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">  <!-- sitemap feed example -->
+    <meta itemprop="name"               content="">
+    <meta itemprop="description"        content="">
+    <meta itemprop="image"              content="http://domain.com/avatar.png">
 
-    <link rel="alternate" type="application/rss+xml" title="(Feedburner)"  href="//feeds.feedburner.com/example">   <!-- RSS feed example -->
-    <link rel="alternate" type="application/atom+xml" title="(Atom 0.3)"   href="//example.com/atom.xml">           <!-- RSS feed example -->
-    <link rel="alternate" type="application/rss+xml" title="(RSS 2.0)"     href="//example.com/rss.xml">            <!-- RSS feed example -->
-<!--
-    FAV ICONS
--->
-    <link itemprop="image"                          href="/image.jpg" />            <!-- site image, also relevant only to homepage -->
-    <link rel="icon" sizes="16x16"                  href="favicon.ico">             <!-- website icon. 16*16 is recommended for the browser favicon -->
-    <link rel="icon" sizes="192x192"                href="favicon.ico">             <!-- website icon. 192*192 is recommended for the toolbar in android -->
+    <link rel="author"      href="https://plus.google.com/[profile-url]" />
+    <link rel="publisher"   href="https://plus.google.com/{+PageId}" />
+
+    <link itemprop="image"                          href="/image.jpg" />
+    <link rel="icon" sizes="16x16"                  href="favicon.ico">
+    <link rel="icon" sizes="192x192"                href="favicon.ico">
     <link rel="shortcut icon" type="image/x-icon"   href="favicon.ico">
     <link rel="shortcut icon" sizes="128x128"       href="favicon-128.png">
     <link rel="shortcut icon" sizes="1024x1024"     href="favicon-1024.png">
 
-    <link rel="apple-touch-icon"             sizes="57x57"      href="114x114.png"> <!-- standard iPhone homescreen icon -->
-    <link rel="apple-touch-icon"             sizes="64x64"      href="114x114.png"> <!-- iOS app-like home screen icons, 64*64 is recommended -->
-    <link rel="apple-touch-icon"             sizes="72x72"      href="144x144.png"> <!-- standard iPad homescreen icon -->
-    <link rel="apple-touch-icon"             sizes="114x114"    href="114x114.png"> <!-- retina iPhone homescreen icon -->
-    <link rel="apple-touch-icon"             sizes="144x144"    href="144x144.png"> <!-- retina iPad homescreen icon -->
+    <link rel="apple-touch-icon"             sizes="57x57"      href="114x114.png">
+    <link rel="apple-touch-icon"             sizes="64x64"      href="114x114.png">
+    <link rel="apple-touch-icon"             sizes="72x72"      href="144x144.png">
+    <link rel="apple-touch-icon"             sizes="114x114"    href="114x114.png">
+    <link rel="apple-touch-icon"             sizes="144x144"    href="144x144.png">
     <link rel="apple-touch-icon-precomposed" sizes="57x57"      href="114x114.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72"      href="144x144.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114"    href="114x114.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144"    href="144x144.png">
 
-    <meta name="apple-mobile-web-app-title"     content="{page title}">             <!-- custom title which is used as app name near the icon -->
-    <meta name="format-detection"               content="telephone = no">           <!-- stop Safari from rendering phone #'s as links -->
+    <meta name="apple-mobile-web-app-title"     content="{page title}">
+    <meta name="format-detection"               content="telephone = no">
 
-    <link rel="apple-touch-startup-image" href="320x460.png"    media="screen and (max-device-width: 320px)">       <!-- displays startup image during load, image must be 320*480 and in portrait orientation -->
+    <link rel="apple-touch-startup-image" href="320x460.png"    media="screen and (max-device-width: 320px)">
     <link rel="apple-touch-startup-image" href="640x920.png"    media="screen and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2)">
     <link rel="apple-touch-startup-image" href="748x1024.png"   media="screen and (min-device-width: 768) and (max-device-width: 1024px) and (orientation:landscape)">
     <link rel="apple-touch-startup-image" href="768x1004.png"   media="screen and (min-device-width: 768) and (max-device-width: 1024px) and (orientation:portrait)">
     <link rel="apple-touch-startup-image" href="1496x2048.png"  media="screen and (min-device-width: 768) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)">
     <link rel="apple-touch-startup-image" href="1536x2008.png"  media="screen and (min-device-width: 768) and (max-device-width: 1024px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2)">
 
-    <meta http-equiv="MSThemeCompatible"          content="no">                     <!-- Windows 7 & 8 -->
-    <meta name="application-name"                 content="Page Title"/>            <!-- sets the custom title which is used as app name near the icon in IE & Safari -->
+    <meta http-equiv="MSThemeCompatible"          content="no">
+    <meta name="application-name"                 content="Page Title"/>
     <meta name="msapplication-starturl"           content="{siteurl}" />
     <meta name="msapplication-navbutton-color"    content="#f65a17" />
     <meta name="msapplication-window"             content="width=1024;height=768">
-    <meta name="msapplication-tooltip"            content="{page title}" />         <!-- sets the tooltip text when hover over the pinned site shortcut -->
-    <meta name="msapplication-TileColor"          content="#f65a17"/>               <!-- the website tile color for IE10 on Win8 -->
-    <meta name="msapplication-TileImage"          content="114x114.png"/>           <!-- website tile icon for IE10 on Win8 tile image (144px by 144px is recommended) -->
-    <meta name="msapplication-square70x70logo"    content="70x70.png">              <!--icon for IE11 on Win8. actual images are 1.8 larger, per MS recommendation, so use 126*126-->
-    <meta name="msapplication-square150x150logo"  content="150x150.png">            <!--icon for IE11 on Win8. actual images are 1.8 larger, per MS recommendation, so use 270*270-->
-    <meta name="msapplication-wide310x150logo"    content="310x150.png">            <!--icon for IE11 on Win8. actual images are 1.8 larger, per MS recommendation, so use 558*270-->
-    <meta name="msapplication-square310x310logo"  content="310x310.png">            <!--icon for IE11 on Win8. actual images are 1.8 larger, per MS recommendation, so use 558*558-->
-    <meta name="msvalidate.01"                    content="[Bing Tag]" />
+    <meta name="msapplication-tooltip"            content="{page title}" />
+    <meta name="msapplication-TileColor"          content="#f65a17"/>
+    <meta name="msapplication-TileImage"          content="114x114.png"/>
+    <meta name="msapplication-square70x70logo"    content="70x70.png">
+    <meta name="msapplication-square150x150logo"  content="150x150.png">
+    <meta name="msapplication-wide310x150logo"    content="310x150.png">
+    <meta name="msapplication-square310x310logo"  content="310x310.png">
 
-    <meta name="msapplication-task" content="name=LinkName;action-uri=/url;icon-uri=favicon.ico" />                 <!-- Windows 7 & 8 -->
-    <meta name="msapplication-task" content="name=LinkName;action-uri=/url;icon-uri=favicon.ico" />                 <!-- Windows 7 & 8 -->
-    <meta name="msapplication-task" content="name=LinkName;action-uri=/url;icon-uri=favicon.ico" />                 <!-- Windows 7 & 8 -->
-    <meta name="msapplication-task" content="name=LinkName;action-uri=/url;icon-uri=favicon.ico" />                 <!-- Windows 7 & 8 -->
-
-    <link rel="search" type="application/opensearchdescription+xml" href="osd.xml" title="{page title}">            <!-- Open Search -->
-    <link rel="search" type="application/opensearchdescription+xml" href="opensearch.xml" title="{page title}">     <!-- Open Search -->
-<!--
-    FONTS, PREFETCH, EXTERNAL, ETC.
--->
-    <script src="//use.typekit.com/XXXXXXX.js"></script>                            <!-- Typekit -->
-
-    <link rel="dns-prefetch" href="http://fonts.googleapis.com">                    <!-- HMTL5 Prefetching single or fullpage assets (dns-prefetch or prefetch) -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>        <!-- HMTL5 Prefetching -->
+    <link rel="dns-prefetch" href="http://fonts.googleapis.com">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,300,400,600,700,800' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <link rel="manifest" href="manifest.json" />                                    <!-- manifest for web apps -->
 <!--
     STYLESHEETS
 -->
@@ -237,7 +152,7 @@ CONDITIONALS
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-77170868-1', 'auto');
+        ga('create', 'UA-XXXXXXXX-1', 'auto');
         ga('send', 'pageview');
 
     </script>
