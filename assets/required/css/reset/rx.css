@@ -25,4 +25,43 @@
  *                              TABLE OF CONTENTS                              *
  * --------------------------------------------------------------------------- *
  *
+ * GLOBAL
+ *  - Box.....................The box-sizing property set for all elements.
  */
+
+/* --------------------------------------*
+ * GLOBAL @Box
+ * --------------------------------------*/
+
+/**
+ * NOTE: Sets every element to inherit it's box-sizing but
+ *       still allows the `content-box` and `padding-box`
+ *       effects to be assigned to an element without a
+ *       universal selector (*) override.
+ *
+ *       http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ *
+ * TODO  Check if the :before ::before compatibility (CSS3) is acceptable
+ */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/**
+ * Adds vertical alignment and text style (decoration) inheritance across browsers.
+ */
+::before,
+::after {
+    text-decoration: inherit;
+    vertical-align: inherit;
+}
+
+/**
+ * Sets `border-box` for all elements by default unless overridden (where available)
+ */
+:root,
+html {
+    box-sizing: border-box;
+}
