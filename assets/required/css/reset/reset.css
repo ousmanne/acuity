@@ -1,0 +1,174 @@
+/** -------------------------------------------------------------------------- *\
+ * Version 0.1.1 [2016-07-04]
+ *
+ * A sharp, crisp front-end design language, by Darkstar.
+ * Reference: https://bitbucket.org/thedrkstr/acuity/overview
+ *
+ *   Project       : Acuity
+ *   Markup        : reset.css
+ *   Author        : Rye Miller <rye@drkstr.io>
+ *   Purpose       : A combo of normalize.css, meyers and csswizardry resets
+ *   Version       : 0.1.0
+ *   Namespace     : Darkstar, http://bitbucket.org/thedrkstr/
+ *   Dependencies  : No dependencies at this time
+ *   Site          : http://acuity.drkstr.io/boilerplate
+ *   Created       : 2015-05-28 22:20:23 GMT
+ *   Last Update   : 2015-09-17 00:00:00 GMT
+ *   Last Modified : 2015-08-01 04:20:08 GMT
+ *   License       : GPLv3
+ *   License URI   : LICENSE
+ *
+ * Website:        https://bitbucket.org/thedrkstr/acuity/overview
+ * Copyright:      (c) 2016 Rye Miller
+ *
+ * --------------------------------------------------------------------------- *
+ *                              TABLE OF CONTENTS                              *
+ * --------------------------------------------------------------------------- *
+ *
+ * RESET
+ *  - Global..................Default element style redefinitions
+ *
+ */
+
+/* --------------------------------------*
+ * RESET @Global
+ * --------------------------------------*/
+
+body {
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+caption,
+canvas,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+form,
+footer,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+tt,
+table,
+tbody,
+textarea,
+tfoot,
+thead,
+time,
+tr,
+th,
+td,
+u,
+ul,
+var,
+video {
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    font-style: inherit;
+    vertical-align: baseline;
+    white-space: normal;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+}
